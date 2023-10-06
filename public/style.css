@@ -23,6 +23,20 @@ html {
   font-variation-settings: normal;
 }
 
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+th {
+  background-color: #333;
+  color: white;
+}
+
 body {
   margin: 0;
   line-height: inherit;
@@ -93,6 +107,11 @@ table {
   text-indent: 0;
   border-color: inherit;
   border-collapse: collapse;
+}
+
+.custom-button {
+  background-color: blue;
+  color: white;
 }
 
 button,
@@ -837,5 +856,23 @@ video {
 @media (prefers-color-scheme: dark) {
   .dark\:inline {
     display: inline;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:flex {
+    display: flex;
+  }
+
+  .md\:items-center {
+    align-items: center;
+  }
+
+  .md\:justify-between {
+    justify-content: space-between;
+  }
+
+  .md\:p-4 {
+    padding: 1rem;
   }
 }
